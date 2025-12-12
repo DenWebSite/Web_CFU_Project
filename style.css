@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Huninn", sans-serif;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(67, 159, 65);
+    overflow: hidden;
+}
+
+.car {
+    position: absolute;
+    width: 80px;
+    transform: translateY(75vh);
+    z-index: 99;
+}
+
+.road {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.around_road {
+    width: 100px;
+    height: 100vh;
+    background-color: rgb(139, 139, 139);
+}
+
+.road-line{
+    position: relative;
+    width: 14px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.lamp {
+    position: absolute;
+    width: 200px;
+}
+
+.lamp:nth-child(1) {
+    width: 120px;
+    transform: translate(-110px, 0vh)
+}
+
+.lamp:nth-child(2) {
+    width: 120px;
+    transform: translate(-510px, 40vh);
+}
+
+.lamp:nth-child(3) {
+    width: 120px;
+    transform: translate(-110px, 40vh);
+}
+
+.lamp:nth-child(4) {
+    width: 120px;
+    transform: translate(-510px, 0vh);
+}
+
+.lamp:nth-child(5) {
+    width: 120px;
+    transform: translate(-510px, 80vh);
+}
+
+.lamp:nth-child(6) {
+    width: 120px;
+    transform: translate(-110px, 80vh);
+}
+
+.game-button {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.game-button:hover {
+    width: 90px;
+    height: 90px;
+    right: 15px;
+    top: 15px;
+}
+
+.game-button .play {
+    display: none;
+}
+
+button img {
+    width: 80px;
+    height: 80px;
+}
+
+.death {
+    position: absolute;
+    width: 70px;
+    transform: translate(-100px, -350px);
+}
+
+.money {
+    position: absolute;
+    width: 60px;
+    transform: translate(50px, -100px);
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    transform: translate(20px, -400px);
+}
+
+.game-score {
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    z-index: 15;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9551512c;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.backdrop-container {
+    padding: 18px 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 219, 219);
+    align-items: center;
+    color: #342727;
+    width: 270px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.restart-button {
+    font-family: "Huninn", sans-serif;
+
+    border: none;
+    width: 170px;
+    font-size: 18px;
+    background-color: #a20343;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    transform: scale(1.1);
+}
+
+.finish-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}

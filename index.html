@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collecting money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/fastCar.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="around_road"></div>
+    <div class="road">
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+        <div class="road-line"></div>
+    </div>
+    <div class="around_road"></div>
+
+    <img class="car" src="images/car.png" alt="">
+
+    <div class="lamps">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+        <img class="lamp" src="images/street-lamp.png" alt="">
+    </div>
+
+    <img class="arrow" src="images/fast-forward.png" alt="">
+    <img class="death" src="images/death-grim-reaper-svgrepo-com.svg" alt="">
+    <img class="money" src="images/coin.svg" alt="">
+
+    <button type="button" class="game-button">
+        <img class="pause" src="images/pause-square-svgrepo-com.svg" alt="">
+        <img class="play" src="images/play-circle-svgrepo-com.svg" alt="">
+    </button>
+
+    <div class="game-score">
+        <p>
+            0
+        </p>
+    </div>
+
+    <div class="backdrop">
+        <div class="backdrop-container">
+            <p class="finish-title">Игра окончена</p>
+            <p class="finish-text">Итоговый счет:
+                <span class="finish-score">0</span>
+            </p>
+            <button class="restart-button" type="button">Начать заново</button>
+        </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/movement.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/elementAnimation.js"></script>
+    <script src="js/lampsAnimation.js"></script>
+    <script src="js/roadlineAnimation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
